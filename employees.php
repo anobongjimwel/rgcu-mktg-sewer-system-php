@@ -9,7 +9,19 @@
 
 <body>
 <script>
-    function deleteClass(classid, name) {
+    function searchName(name) {
+        let xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById('table_employees').innerHTML = this.responseText;
+            }
+        };
+        xmlHttp.open("post","assets/ajax/searchEmployee.php", true);
+        xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlHttp.send("q="+name);
+    }
+
+    function deleteEmployee(classid, name) {
         Sweetalert2.fire({
             title: "Are you sure?",
             text: "Delete employee \""+name+"\"?",
@@ -65,12 +77,10 @@
             <div class="col-12" id="page-heading">
                 <h2>View Employees (<?php echo $employeeMgr->countEmployees() ?>)</h2>
                 <div style="height:10px;"></div>
-                <form>
-                    <div class="form-group"><input class="form-control" type="search" placeholder="Type to search"></div>
-                </form>
+                    <div class="form-group"><input class="form-control" onkeyup="searchName(this.value)" type="search" placeholder="Type to search"></div>
             </div>
             <div class="col" style="padding-top:20px;"><div>
-    <table class='table table-hover table-fluid table-borderless'>
+    <table class='table table-hover table-fluid table-borderless' id="table_employees">
         <tbody>
             <tr>
                 <th>ID</th>
@@ -83,7 +93,7 @@
                         echo "<tr>";
                         echo "<td>" . $employee['id'] . "</td>";
                         echo "<td>" . $employee['name'] . "</td>";
-                        echo "<td><a href='employee.php?id=" . $employee['id'] . "'>View</a> · <a href='javascript:deleteClass(".$employee['id'].",\"".$employee['name']."\")'>Delete</a></td>";
+                        echo "<td><a href='employee.php?id=" . $employee['id'] . "'>View</a> · <a href='javascript:deleteEmployee(".$employee['id'].",\"".$employee['name']."\")'>Delete</a></td>";
                     }
                 }
             ?>
