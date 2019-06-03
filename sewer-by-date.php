@@ -27,7 +27,6 @@
                 <th rowspan=2 style='text-align: center; vertical-align: middle'>Item</th>
                 <th colspan=3 style='text-align: center'>Sewer</th>
                 <th colspan=3 style='text-align: center'>Packing</th>
-                <th rowspan=2 style='text-align: center; vertical-align: middle'>Actions</th>
             </tr>
             <tr>
                 <th style='text-align: center'>Edging</th>
@@ -58,7 +57,7 @@
                         for ($i = 1; $i <= 6; $i++) {
                             echo "<td>" . $sewerMgr->getSewerSpecificStatusAndDate($sewer['id'], $i)['name'] . "<br />" . (is_null($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'], $i)['date']) ? "" : date("F d, Y", strtotime($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'], $i)['date']))) . "</td>";
                         }
-                        echo "<td><a href=\"sewer.php?id=" . $sewer['id'] . "\">View</a><br /><a href=\"#\" onclick='deleteSewer(" . $sewer['id'] . ", \"" . $sewer['item'] . "\")'>Delete</a></td>";
+                        echo "</tr>";
                     }
                 }
             ?>

@@ -1,3 +1,4 @@
+<?php require_once "assets/requires/dbcon.php" ?>
 <!DOCTYPE html>
 <html>
 
@@ -7,8 +8,23 @@
 </head>
 
 <body>
+<?php
+    if (!isset($_GET['id']) || empty($_GET['id'])) {
+        echo "<script>
+                location.href = 'cards.php';
+              </script>";
+    } else {
+        $checkForCards = $db->query("SELECT * FROM cards WHERE id = ".$_GET['id']);
+        if ($checkForCards->rowCount()!=1) {
+            echo "<script>location.href='cards.php'</script>";
+        } else {
+            $details = $checkForCards->fetch(PDO::FETCH_ASSOC);
+        }
+    }
+    ?>
     <script>
-        function addCard() {
+        function editCard() {
+            const id = document.getElementById("id");
             const itm = document.getElementById("itm");
             const dsgn = document.getElementById("dsgn");
             const stre = document.getElementById("stre");
@@ -16,7 +32,7 @@
                 Sweetalert2.fire({
                     title: "Information Incomplete!",
                     type: "error",
-                    text: "You must fill in required fields to add the card you want to add."
+                    text: "You must fill in required fields to edit the card you want to edit."
                 });
             } else {
                 var xmlHttp = new XMLHttpRequest();
@@ -26,7 +42,7 @@
                             Sweetalert2.fire({
                                 title: "Added!",
                                 type: "success",
-                                text: "New card named \""+itm.value+"\" added"
+                                text: "Card named \""+itm.value+"\" edited"
                             });
                             setTimeout(function() {
                                 location.href = 'cards.php';
@@ -35,14 +51,14 @@
                             Sweetalert2.fire({
                                 title: "Failed",
                                 type: "error",
-                                text: "Failed to add new card named \""+itm.value+"\""
+                                text: "Failed to edit card named \""+itm.value+"\""
                             });
                         }
                     }
                 };
-                xmlHttp.open("post","assets/ajax/addNewCard.php", true);
+                xmlHttp.open("post","assets/ajax/editCard.php", true);
                 xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-                xmlHttp.send("itm="+itm.value+"&dsgn="+dsgn.value+"&stre="+stre.value);
+                xmlHttp.send("itm="+itm.value+"&dsgn="+dsgn.value+"&stre="+stre.value+"&id="+id.value);
             }
 
         }
@@ -50,7 +66,7 @@
         function enter(event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
-                addCard();
+                editCard();
             }
         }
     </script>
@@ -61,11 +77,12 @@
                 <h2>Add New Card</h2>
             </div>
             <div class="col" id="page-form" style="padding-top:20px;">
-                <form><label>Item Name:</label><input class="form-control form-control-sm" type="text" id="itm" onkeyup="enter(event)" name="itm" style="width:100%;">
-                    <div style="height:30px;"></div><label>Item Design:</label><input class="form-control form-control-sm" onkeyup="enter(event)" id="dsgn" name="dsgn" type="text" style="width:100%;">
-                    <div style="height:30px;"></div><label>Item Store:</label><input class="form-control form-control-sm" onkeyup="enter(event)" id="stre" name="stre" type="text" style="width:100%;">
+                <form><label>Item Name:</label><input class="form-control form-control-sm" type="text" id="itm" onkeyup="enter(event)" name="itm" value="<?php echo $details['item'] ?>" style="width:100%;">
+                    <input type="hidden" id="id" name="id" value="<?php echo $_GET['id']?>" />
+                    <div style="height:30px;"></div><label>Item Design:</label><input class="form-control form-control-sm" onkeyup="enter(event)" id="dsgn" name="dsgn" type="text" value="<?php echo $details['design'] ?>" style="width:100%;">
+                    <div style="height:30px;"></div><label>Item Store:</label><input class="form-control form-control-sm" onkeyup="enter(event)" id="stre" name="stre" type="text" value="<?php echo $details ['store'] ?>" style="width:100%;">
                     <div style="height:30px;"></div>
-                    <div class="btn-group float-right" role="group"><button class="btn btn-danger" type="button" onclick="location.reload()">Cancel</button><button class="btn btn-success" onclick="addCard()" type="button">Submit</button></div>
+                    <div class="btn-group float-right" role="group"><button class="btn btn-danger" type="button" onclick="location.href='cards.php'">Cancel</button><button class="btn btn-success" onclick="editCard()" type="button">Submit</button></div>
                 </form>
             </div>
         </div>

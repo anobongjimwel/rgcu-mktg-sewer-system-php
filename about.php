@@ -14,7 +14,7 @@
                 <h2>RGCU Marketing Sewer Management System&nbsp;</h2>
                 <h5>By Jimwel Anobong</h5>
                 <h5>For Grace Cu, RGCU Mktg.</h5>
-                <h5>v 1.1</h5>
+                <h5>v 1.2</h5>
                 <h5>© 2019</h5>
             </div>
         </div>

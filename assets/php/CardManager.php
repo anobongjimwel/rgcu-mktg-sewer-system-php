@@ -45,6 +45,19 @@
             }
         }
 
+        public function editCard($id, $item, $design, $store) {
+            $query = $this->db->prepare("UPDATE cards SET item = :item, design = :design, store = :store WHERE id = :id");
+            $query->bindParam(":id", $id);
+            $query->bindParam(":item", $item);
+            $query->bindParam(":design", $design);
+            $query->bindParam(":store", $store);
+            if ($query->execute()) {
+                return true;
+            } else {
+                return $query->errorInfo();
+            }
+        }
+
         public function deleteCard($id) {
             $query = $this->db->query("DELETE FROM cards WHERE id = $id");
             if ($query->rowCount()>0) {

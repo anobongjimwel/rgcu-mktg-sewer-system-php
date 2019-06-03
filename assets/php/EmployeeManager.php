@@ -28,6 +28,16 @@
             }
         }
 
+        public function getEmployeeName($id) {
+            $query = $this->db->query("SELECT * FROM employees WHERE id = $id");
+            if ($query->rowCount()>0) {
+                $employees = $query->fetch(PDO::FETCH_ASSOC);
+                return $employees;
+            } else {
+                return false;
+            }
+        }
+
         public function searchEmployee($name) {
             $query = $this->db->query("SELECT * FROM employees WHERE name LIKE '%$name%'");
             if ($query->rowCount()>0) {

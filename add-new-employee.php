@@ -28,7 +28,7 @@
                             text: "New employee named \""+name.value+"\" added"
                         });
                         setTimeout(function() {
-                            location.href = 'employees.php';
+                            location.href = 'cards.php';
                         }, 3000);
                     } else {
                         Sweetalert2.fire({
