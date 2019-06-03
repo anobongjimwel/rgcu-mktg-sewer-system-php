@@ -14,16 +14,16 @@
             <div class="col-12" id="page-heading">
                 <h2>View Sewers By Date</h2>
                 <div></div>
-                <form>
-                    <div class="form-group"><input class="form-control" type="date" style="width:100%;">
-                        <div style="height:10px;"></div><button class="btn btn-primary float-right" type="button">View</button></div>
+                <form method="get" action="sewer-by-date.php">
+                    <div class="form-group"><input class="form-control" type="date" name="date" id="date" <?php echo (isset($_GET['date']) && !empty($_GET['date'])) ? "value='".$_GET['date']."'" : null ; ?>style="width:100%;">
+                        <div style="height:10px;"></div><button class="btn btn-primary float-right" type="submit" name="sewerFilterSubmit" value="sewerFilterSubmit">View</button></div>
                 </form>
             </div>
             <div class="col col-12" id="page-form" style="padding-top:20px;"><div id="ajaxTable">
     <table class='table equal-width table-hover table-bordered table-responsive-xs'>
         <tbody>
             <tr>
-                <th rowspan=2 style='text-align: center; vertical-align: middle'>ID</th>
+                <th rowspan=2 style='text-align: center; vertical-align: middle'>CN</th>
                 <th rowspan=2 style='text-align: center; vertical-align: middle'>Item</th>
                 <th colspan=3 style='text-align: center'>Sewer</th>
                 <th colspan=3 style='text-align: center'>Packing</th>
@@ -38,18 +38,30 @@
                 <th style='text-align: center'>Pack</th>
             </tr>
             <?php
-                if ($sewerMgr->countSewers()!=0) {
-                    foreach ($sewerMgr->getSewersID() as $sewer) {
+                if (isset($_GET['date']) && !empty($_GET['date']) ) {
+                    if (isset($_GET['sewerFilterSubmit']) && !empty($_GET['sewerFilterSubmit'])) {
+                        $counter = $sewerMgr->getSewersIDwithFilterCounter($_GET['date']);
+                        $getter = $sewerMgr->getSewersIDwithFilter($_GET['date']);
+                    } else {
+                        $counter = $sewerMgr->countSewers();
+                        $getter = $sewerMgr->getSewersID();
+                    }
+                } else {
+                    $counter = $sewerMgr->countSewers();
+                    $getter = $sewerMgr->getSewersID();
+                }
+                if ($counter != 0) {
+                    foreach ($getter as $sewer) {
                         echo "<tr>";
-                        echo "<td>" . $sewer['id'] . "</td>";
+                        echo "<td>" . $sewer['card_number'] . "</td>";
                         echo "<td>" . $sewerMgr->getSewerItem($sewer['id']) . "</td>";
                         for ($i = 1; $i <= 6; $i++) {
-                            echo "<td>". $sewerMgr->getSewerSpecificStatusAndDate($sewer['id'],$i)['name'] . "<br />" . (is_null($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'],$i)['date']) ? "" : date("F d, Y", strtotime($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'],$i)['date']))) . "</td>";
+                            echo "<td>" . $sewerMgr->getSewerSpecificStatusAndDate($sewer['id'], $i)['name'] . "<br />" . (is_null($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'], $i)['date']) ? "" : date("F d, Y", strtotime($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'], $i)['date']))) . "</td>";
                         }
-                        echo "<td><a href=\"sewer.php?id=" . $sewer['id'] . "\">View</a> · <a href=\"#\" onclick='deleteSewer(" . $sewer['id'] . ", \"" . $sewer['item'] . "\")'>Delete</a></td>";
+                        echo "<td><a href=\"sewer.php?id=" . $sewer['id'] . "\">View</a><br /><a href=\"#\" onclick='deleteSewer(" . $sewer['id'] . ", \"" . $sewer['item'] . "\")'>Delete</a></td>";
                     }
                 }
-                ?>
+            ?>
             <!-- UI Preview Purposes Only
             <tr>
                 <td>ID</td>

@@ -23,12 +23,38 @@
 
 
         public function getSewersID() {
-            $query = $this->db->query("SELECT * FROM sewers ORDER BY ID desc LIMIT 30");
+            $query = $this->db->query("SELECT * FROM sewers ORDER BY card_number desc LIMIT 30");
             if ($query->rowCount()>0) {
                 $sewers = $query->fetchAll(PDO::FETCH_ASSOC);
                 return $sewers;
             } else {
                 return false;
+            }
+        }
+
+
+        public function getSewersIDwithFilter($q) {
+            $query = $this->db->prepare("SELECT * FROM sewers s INNER JOIN (SELECT sewer_id FROM tasks t WHERE date = :date GROUP BY sewer_id) t ON s.id = t.sewer_id ORDER BY card_number desc LIMIT 50;");
+            $dateParsed = date_parse($q)['year']."-".date_parse($q)['month']."-".date_parse($q)['day'];
+            $query->bindParam(":date", $dateParsed);
+            $query->execute();
+            if ($query->rowCount()>0) {
+                $sewers = $query->fetchAll(PDO::FETCH_ASSOC);
+                return $sewers;
+            } else {
+                return false;
+            }
+        }
+
+        public function getSewersIDwithFilterCounter($q) {
+            $query = $this->db->prepare("SELECT * FROM sewers s INNER JOIN (SELECT sewer_id FROM tasks t WHERE date = :date GROUP BY sewer_id) t ON s.id = t.sewer_id ORDER BY card_number desc LIMIT 50;");
+            $dateParsed = date_parse($q)['year']."-".date_parse($q)['month']."-".date_parse($q)['day'];
+            $query->bindParam(":date", $dateParsed);
+            $query->execute();
+            if ($query->rowCount()>0) {
+                return $query->rowCount();
+            } else {
+                return 0;
             }
         }
 
@@ -191,7 +217,7 @@
                 $query->bindValue(":date", date_parse($date)['year']."-".date_parse($date)['month']."-".date_parse($date)['day']);
             }
             return $query->execute();
-        }
+            }
     }
 
     $sewerMgr = new SewerManager();

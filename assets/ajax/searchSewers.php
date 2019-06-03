@@ -21,6 +21,6 @@
             echo "<td>".$sewerMgr->getSewerItem($sewer['id'])."</td>";
             echo "<td>".$sewerMgr->getSewerQty($sewer['id'])." pcs, PhP ".number_format($sewerMgr->getSewerAmt($sewer['id']),2,'.',', ')."</td>";
             echo "<td>".$sewerMgr->getSewerStatusById($sewer['id'])."</td>";
-            echo "<td><a href=\"sewer.php?id=".$sewer['id']."\">View</a> · <a href=\"#\" onclick='deleteSewer(".$sewer['id'].", \"".$sewer['item']."\")'>Delete</a></td>";
+            echo "<td><a href=\"sewer.php?id=".$sewer['id']."\">View</a><br /><a href=\"#\" onclick='deleteSewer(".$sewer['id'].", \"".$sewer['item']."\")'>Delete</a></td>";
         }
     }
