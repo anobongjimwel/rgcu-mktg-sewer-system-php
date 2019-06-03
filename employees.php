@@ -21,7 +21,7 @@
         xmlHttp.send("q="+name);
     }
 
-    function deleteEmployee(classid, name) {
+    function deleteEmployee(id, name) {
         Sweetalert2.fire({
             title: "Are you sure?",
             text: "Delete employee \""+name+"\"?",
@@ -33,42 +33,42 @@
             type: "warning"
         }).then((result) => {
             if (result.value) {
-            let xmlHttp = new XMLHttpRequest();
-            xmlHttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    if (this.responseText=="GOOD") {
-                        Sweetalert2.fire({
-                            title: "Deleted!",
-                            type: "success",
-                            text: "Employee '"+name+"' deleted. "
-                        });
-                        setTimeout(function() {
-                            location.reload();
-                        }, 2000);
-                    } else  {
-                        Sweetalert2.fire({
-                            title: "Failed",
-                            type: "error",
-                            text: "Failed to employee class "+name
-                        });
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (this.responseText=="GOOD") {
+                            Sweetalert2.fire({
+                                title: "Deleted!",
+                                type: "success",
+                                text: "Employee '"+name+"' deleted. "
+                            });
+                            setTimeout(function() {
+                                location.reload();
+                            }, 2000);
+                        } else  {
+                            Sweetalert2.fire({
+                                title: "Failed",
+                                type: "error",
+                                text: "Failed to delete employee "+name
+                            });
+                        }
                     }
-                }
-            };
-            xmlHttp.open("post","assets/ajax/deleteEmployee.php", false);
-            xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-            xmlHttp.send("id="+classid);
+                };
+                xmlHttp.open("post","assets/ajax/deleteEmployee.php", false);
+                xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                xmlHttp.send("id="+id);
 
-            setTimeout(function() {
-                location.reload();
-            }, 2000);
-        } else {
-            Sweetalert2.fire({
-                title: "Declined!",
-                type: "error",
-                text: "Employee '"+name+"' deletion action declined. "
-            })
-        }
-    })
+                setTimeout(function() {
+                    location.reload();
+                }, 2000);
+            } else {
+                Sweetalert2.fire({
+                    title: "Declined!",
+                    type: "error",
+                    text: "Employee '"+name+"' deletion action declined. "
+                })
+            }
+        })
     }
 </script>
 <?php include_once "assets/includes/navbar.php"?>

@@ -1,3 +1,4 @@
+<?php require_once "assets/php/SewerManager.php"?>
 <!DOCTYPE html>
 <html>
 
@@ -36,6 +37,20 @@
                 <th style='text-align: center'>Quality Control</th>
                 <th style='text-align: center'>Pack</th>
             </tr>
+            <?php
+                if ($sewerMgr->countSewers()!=0) {
+                    foreach ($sewerMgr->getSewersID() as $sewer) {
+                        echo "<tr>";
+                        echo "<td>" . $sewer['id'] . "</td>";
+                        echo "<td>" . $sewerMgr->getSewerItem($sewer['id']) . "</td>";
+                        for ($i = 1; $i <= 6; $i++) {
+                            echo "<td>". $sewerMgr->getSewerSpecificStatusAndDate($sewer['id'],$i)['name'] . "<br />" . (is_null($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'],$i)['date']) ? "" : date("F d, Y", strtotime($sewerMgr->getSewerSpecificStatusAndDate($sewer['id'],$i)['date']))) . "</td>";
+                        }
+                        echo "<td><a href=\"sewer.php?id=" . $sewer['id'] . "\">View</a> · <a href=\"#\" onclick='deleteSewer(" . $sewer['id'] . ", \"" . $sewer['item'] . "\")'>Delete</a></td>";
+                    }
+                }
+                ?>
+            <!-- UI Preview Purposes Only
             <tr>
                 <td>ID</td>
                 <td>Sample Item</td>
@@ -45,8 +60,9 @@
                 <td>Jimwel Anobong<br />Jun 20, 2019</td>
                 <td>Jimwel Anobong<br />Jun 20, 2019</td>
                 <td>Jimwel Anobong<br />Jun 20, 2019</td>
-                <td><a href="#">View</a> · <a href="#">Edit</a> · <a href="#">Delete</a></td>
+                <td><a href="#">View</a> · <a href="#">Delete</a></td>
             </tr>
+            -->
         </tbody>
     </table>
 </div></div>
