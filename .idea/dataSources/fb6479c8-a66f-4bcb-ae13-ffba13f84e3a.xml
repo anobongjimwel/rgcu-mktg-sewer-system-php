@@ -1141,21 +1141,36 @@
       <DataType>date|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="280" parent="254" name="tasks_sewers_id_fk">
+    <column id="280" parent="254" name="quantity">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="281" parent="254" name="unit_price">
+      <Position>7</Position>
+      <DataType>double|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="282" parent="254" name="amount">
+      <Position>8</Position>
+      <DataType>double|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="283" parent="254" name="tasks_sewers_id_fk">
       <ColNames>sewer_id</ColNames>
     </index>
-    <index id="281" parent="254" name="tasks_statuses_id_fk">
+    <index id="284" parent="254" name="tasks_statuses_id_fk">
       <ColNames>status</ColNames>
     </index>
-    <index id="282" parent="254" name="tasks_employees_id_fk">
+    <index id="285" parent="254" name="tasks_employees_id_fk">
       <ColNames>employee</ColNames>
     </index>
-    <key id="283" parent="254" name="PRIMARY">
+    <key id="286" parent="254" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="284" parent="254" name="tasks_sewers_id_fk">
+    <foreign-key id="287" parent="254" name="tasks_sewers_id_fk">
       <ColNames>sewer_id</ColNames>
       <RefSchemaName>rgcu_sewer</RefSchemaName>
       <RefTableName>sewers</RefTableName>
@@ -1163,21 +1178,11 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="285" parent="254" name="tasks_statuses_id_fk">
-      <ColNames>status</ColNames>
-      <RefSchemaName>rgcu_sewer</RefSchemaName>
-      <RefTableName>statuses</RefTableName>
-      <RefColNames>id</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
-    </foreign-key>
-    <foreign-key id="286" parent="254" name="tasks_employees_id_fk">
+    <foreign-key id="288" parent="254" name="tasks_employees_id_fk">
       <ColNames>employee</ColNames>
       <RefSchemaName>rgcu_sewer</RefSchemaName>
       <RefTableName>employees</RefTableName>
       <RefColNames>id</RefColNames>
-      <OnUpdate>set-null</OnUpdate>
-      <OnDelete>set-null</OnDelete>
     </foreign-key>
   </database-model>
 </dataSource>
