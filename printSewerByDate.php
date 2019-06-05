@@ -10,8 +10,9 @@
                     isset($_POST['sewerPrinter']) && !empty($_POST['sewerPrinter']) &&
                     isset($_POST['date']) && !empty($_POST['date'])
             ) {
+                $doPrint = true;
                 $date = date_parse($_POST['date'])['year']."-".date_parse($_POST['date'])['month']."-".date_parse($_POST['date'])['day'];
-                $query = $db->query("SELECT e.id, e.name FROM employees e INNER JOIN ( SELECT employee FROM tasks WHERE date = '2019-12-19' GROUP BY employee) t ON e.id = t.employee");
+                $query = $db->query("SELECT e.id, e.name FROM employees e INNER JOIN ( SELECT employee FROM tasks WHERE date = '$date' GROUP BY employee) t ON e.id = t.employee");
                 foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $employee) {
                     echo "<table class='table table-hover table-fluid table-bordered' id=\"table_employees\">";
                     echo "<tbody>";
@@ -36,8 +37,8 @@
                         echo "<td>" . $activity['item'] . " (" . $activity['card'] . ")</td>";
                         echo "<td>" . $activity['status'] . "</td>";
                         echo "<td>" . $activity['quantity'] . "</td>";
-                        echo "<td>" . number_format($activity['unit_price'], 2) . "</td>";
-                        echo "<td>" . number_format($activity['amount'], 2) . "</td>";
+                        echo "<td>" . "PhP ".number_format($activity['unit_price'], 2) . "</td>";
+                        echo "<td>" . "PhP ".number_format($activity['amount'], 2) . "</td>";
                         echo "<td>" . date("F gS, Y", strtotime($activity['date'])) . "</td>";
                         echo "</tr>";
                     }
@@ -45,7 +46,6 @@
                     </table>";
                     echo "<div style='page-break-after: always'></div>";
                 }
-                echo "<script>print()</script>";
             } else {
                 echo "<script>location.href='print-sewer-by-date.php'</script>";
             }
@@ -80,5 +80,10 @@
             </tbody>
         </table>
         -->
+        <?php
+            if (isset($doPrint) && $doPrint) {
+                echo "<script>print()</script>";
+            }
+        ?>
     </body>
 </html>

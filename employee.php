@@ -55,8 +55,8 @@
                             echo "<td>" . $activity['item'] . " (" . $activity['card'] . ")</td>";
                             echo "<td>" . $activity['activity'] . "</td>";
                             echo "<td>" . $activity['quantity'] . "</td>";
-                            echo "<td>" . number_format($activity['unit_price'], 2) . "</td>";
-                            echo "<td>" . number_format($activity['amount'], 2) . "</td>";
+                            echo "<td>" . "PhP ".number_format($activity['unit_price'], 2) . "</td>";
+                            echo "<td>" . "PhP ".number_format($activity['amount'], 2) . "</td>";
                             echo "<td>" . date("F gS, Y", strtotime($activity['date'])) . "</td>";
                             echo "</tr>";
                         }
