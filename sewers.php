@@ -71,6 +71,8 @@
         })
     }
 </script>
+
+
 <?php include_once "assets/includes/navbar.php" ?>
 <div class="container-fluid">
     <div class="row">

@@ -2,87 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d79dea05-47c9-47a4-a27b-c60fb392792e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/ajax/getLatestSewerRecord.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/printSewerByDate.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb6479c8-a66f-4bcb-ae13-ffba13f84e3a.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/fb6479c8-a66f-4bcb-ae13-ffba13f84e3a.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
-      <change beforePath="$PROJECT_DIR$/add-new-card.php" afterPath="$PROJECT_DIR$/add-new-card.php" />
       <change beforePath="$PROJECT_DIR$/add-new-employee.php" afterPath="$PROJECT_DIR$/add-new-employee.php" />
-      <change beforePath="$PROJECT_DIR$/add-new-sewer.php" afterPath="$PROJECT_DIR$/add-new-sewer.php" />
-      <change beforePath="$PROJECT_DIR$/assets/ajax/addNewCard.php" afterPath="$PROJECT_DIR$/assets/ajax/addNewCard.php" />
-      <change beforePath="$PROJECT_DIR$/assets/ajax/addNewEmployee.php" afterPath="$PROJECT_DIR$/assets/ajax/addNewEmployee.php" />
-      <change beforePath="$PROJECT_DIR$/assets/ajax/addNewSewer.php" afterPath="$PROJECT_DIR$/assets/ajax/addNewSewer.php" />
-      <change beforePath="$PROJECT_DIR$/assets/ajax/editCard.php" afterPath="$PROJECT_DIR$/assets/ajax/editCard.php" />
-      <change beforePath="$PROJECT_DIR$/assets/ajax/searchCards.php" afterPath="$PROJECT_DIR$/assets/ajax/searchCards.php" />
-      <change beforePath="$PROJECT_DIR$/assets/ajax/searchEmployee.php" afterPath="$PROJECT_DIR$/assets/ajax/searchEmployee.php" />
-      <change beforePath="$PROJECT_DIR$/assets/ajax/searchSewers.php" afterPath="$PROJECT_DIR$/assets/ajax/searchSewers.php" />
-      <change beforePath="$PROJECT_DIR$/assets/includes/navbar.php" afterPath="$PROJECT_DIR$/assets/includes/navbar.php" />
-      <change beforePath="$PROJECT_DIR$/assets/php/CardManager.php" afterPath="$PROJECT_DIR$/assets/php/CardManager.php" />
-      <change beforePath="$PROJECT_DIR$/assets/php/EmployeeManager.php" afterPath="$PROJECT_DIR$/assets/php/EmployeeManager.php" />
-      <change beforePath="$PROJECT_DIR$/assets/php/SewerManager.php" afterPath="$PROJECT_DIR$/assets/php/SewerManager.php" />
-      <change beforePath="$PROJECT_DIR$/cardEdit.php" afterPath="$PROJECT_DIR$/cardEdit.php" />
-      <change beforePath="$PROJECT_DIR$/cards.php" afterPath="$PROJECT_DIR$/cards.php" />
-      <change beforePath="$PROJECT_DIR$/employee.php" afterPath="$PROJECT_DIR$/employee.php" />
-      <change beforePath="$PROJECT_DIR$/employees.php" afterPath="$PROJECT_DIR$/employees.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.all.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.all.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.css" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.css" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/SweetAlert.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/SweetAlert.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/constants.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/constants.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/globalState.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/globalState.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/_main.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/_main.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/close.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/close.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/enable-disable-elements.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/enable-disable-elements.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/getInput.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/getInput.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/hideLoading.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/hideLoading.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/progress-steps.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/progress-steps.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/show-reset-validation-error.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/show-reset-validation-error.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/update.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/update.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/mixins.scss" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/mixins.scss" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/privateMethods.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/privateMethods.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/privateProps.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/privateProps.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/argsToParams.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/argsToParams.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/dom.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/dom.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/fire.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/fire.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/mixin.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/mixin.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/queue.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/queue.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/showLoading.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/showLoading.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/timer.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/timer.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/sweetalert2.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/sweetalert2.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/sweetalert2.scss" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/sweetalert2.scss" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/DismissReason.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/DismissReason.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/Timer.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/Timer.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/aria.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/aria.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/classes.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/classes.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/defaultInputValidators.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/defaultInputValidators.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/animationEndEvent.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/animationEndEvent.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/domUtils.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/domUtils.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/getters.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/getters.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/init.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/init.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/measureScrollbar.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/measureScrollbar.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/parseHtmlToContainer.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/parseHtmlToContainer.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderActions.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderActions.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderContent.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderContent.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderIcon.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderIcon.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderImage.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderImage.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderProgressSteps.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderProgressSteps.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderTitle.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderTitle.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/ieFix.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/ieFix.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/iosFix.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/iosFix.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/isNodeEnv.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/isNodeEnv.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/openPopup.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/openPopup.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/params.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/params.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/scrollbarFix.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/scrollbarFix.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/setParameters.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/setParameters.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/utils.js" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/utils.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/variables.scss" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/src/variables.scss" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/sweetalert2.d.ts" afterPath="$PROJECT_DIR$/node_modules/sweetalert2/sweetalert2.d.ts" />
-      <change beforePath="$PROJECT_DIR$/print-sewer-by-date.php" afterPath="$PROJECT_DIR$/print-sewer-by-date.php" />
-      <change beforePath="$PROJECT_DIR$/sewer-by-date.php" afterPath="$PROJECT_DIR$/sewer-by-date.php" />
-      <change beforePath="$PROJECT_DIR$/sewer.php" afterPath="$PROJECT_DIR$/sewer.php" />
       <change beforePath="$PROJECT_DIR$/sewers.php" afterPath="$PROJECT_DIR$/sewers.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,7 +60,7 @@
       <file leaf-file-name="employee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="570">
               <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding>
                 <marker date="1559650191000" expanded="true" signature="1706:2181" ph="SELECT s.car... " />
@@ -151,7 +72,7 @@
       <file leaf-file-name="sewer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sewer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="2520">
               <caret line="168" column="41" lean-forward="false" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
               <folding>
                 <marker date="1559650414000" expanded="true" signature="5302:5386" ph="..." />
@@ -172,18 +93,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
               <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#th#4;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sewers.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sewers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sewers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="415">
+              <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-new-employee.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/add-new-employee.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -192,7 +121,7 @@
       <file leaf-file-name="employees.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employees.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
+            <state relative-caret-position="1545">
               <caret line="103" column="35" lean-forward="false" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
               <folding />
             </state>
@@ -219,23 +148,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cardEdit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardEdit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-              <folding>
-                <marker date="1559661426000" expanded="true" signature="257:326" ph="..." />
-                <marker date="1559661426000" expanded="true" signature="372:403" ph="SELECT * FRO... cards" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cards.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cards.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="345">
               <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="35" />
               <folding />
             </state>
@@ -303,8 +219,6 @@
         <option value="$PROJECT_DIR$/assets/ajax/addNewSewer.php" />
         <option value="$PROJECT_DIR$/add-new-sewer.php" />
         <option value="$PROJECT_DIR$/assets/ajax/getLatestSewerRecord.php" />
-        <option value="$PROJECT_DIR$/sewers.php" />
-        <option value="$PROJECT_DIR$/add-new-employee.php" />
         <option value="$PROJECT_DIR$/employee.php" />
         <option value="$PROJECT_DIR$/assets/php/SewerManager.php" />
         <option value="$PROJECT_DIR$/sewer.php" />
@@ -312,6 +226,8 @@
         <option value="$PROJECT_DIR$/print-sewer-by-date.php" />
         <option value="$PROJECT_DIR$/about.php" />
         <option value="$PROJECT_DIR$/cardEdit.php" />
+        <option value="$PROJECT_DIR$/sewers.php" />
+        <option value="$PROJECT_DIR$/add-new-employee.php" />
       </list>
     </option>
   </component>
@@ -388,6 +304,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -402,62 +319,6 @@
             </path>
             <path>
               <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ajax" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sewer System" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="requires" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="RGCU Sewer System" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
@@ -465,7 +326,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,12 +382,14 @@
       <workItem from="1559637920476" duration="81000" />
       <workItem from="1559639320165" duration="399000" />
       <workItem from="1559639775879" duration="12493000" />
-      <workItem from="1559661382103" duration="178000" />
+      <workItem from="1559661382103" duration="357000" />
+      <workItem from="1559667529828" duration="374000" />
+      <workItem from="1559704293401" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102151000" />
+    <option name="totallyTimeSpent" value="102791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="993" extended-state="6" />
@@ -537,19 +399,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546875" sideWeight="0.55157435" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546875" sideWeight="0.5602606" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546875" sideWeight="0.44842562" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546875" sideWeight="0.4397394" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1703125" sideWeight="0.4961998" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -578,9 +440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="62" column="70" lean-forward="false" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
-          <folding>
-            <element signature="n#style#0;n#th#4;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,16 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <marker date="1559648498000" expanded="true" signature="429:452" ph="SELECT * FRO... employees" />
-            <marker date="1559648498000" expanded="true" signature="665:688" ph="SELECT * FRO... employees" />
-            <marker date="1559648498000" expanded="true" signature="921:955" ph="SELECT * FRO... employees" />
-            <marker date="1559648498000" expanded="true" signature="921:956" ph="SELECT * FRO... employees" />
-            <marker date="1559648498000" expanded="true" signature="921:957" ph="SELECT * FRO... employees" />
-            <marker date="1559648498000" expanded="true" signature="1233:1282" ph="SELECT * FRO... employees" />
-            <marker date="1559648498000" expanded="true" signature="1515:1560" ph="INSERT INTO employees... " />
-            <marker date="1559648498000" expanded="true" signature="1777:1810" ph="DELETE FROM employees... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,10 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding>
-            <marker date="1559648497000" expanded="true" signature="65:90" ph="SELECT max(i... " />
-            <marker date="1559648497000" expanded="true" signature="65:97" ph="SELECT max(i... SEWERS" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,25 +788,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-new-employee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cardEdit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="630">
           <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
           <folding>
             <marker date="1559661426000" expanded="true" signature="257:326" ph="..." />
@@ -976,7 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="345">
           <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="35" />
           <folding />
         </state>
@@ -984,7 +816,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="570">
           <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
             <marker date="1559650191000" expanded="true" signature="1706:2181" ph="SELECT s.car... " />
@@ -994,7 +826,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employees.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
+        <state relative-caret-position="1545">
           <caret line="103" column="35" lean-forward="false" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
           <folding />
         </state>
@@ -1039,7 +871,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sewer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="2520">
           <caret line="168" column="41" lean-forward="false" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
           <folding>
             <marker date="1559650414000" expanded="true" signature="5302:5386" ph="..." />
@@ -1058,16 +890,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#th#4;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sewers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="415">
+          <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-new-employee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
           <folding />
         </state>
       </provider>
